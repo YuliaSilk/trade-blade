@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+ --background: #030718;
+ --secondary-bg: #eaeff0;
+ --text: #030718;
+ --secondary-text: #a5aebc;
+ --bg-white: #ffffff;
+ --bg-black: #000000;
+ --primary: #6a54ff;
+ --accent: #57e1ff;
+ --accent-disabled: ##e7f7f8;
+ --accent-secondary: ##35ff9e;
+}
+
+@theme {
+ --breakpoint-*: initial;
+
+ --breakpoint-xs: 23.4375rem;
+ --breakpoint-lg: 64rem;
+ --breakpoint-xl: 90rem;
+}
+
+@media (prefers-color-scheme: dark) {
+ :root {
+  --background: #030718;
+  --foreground: #ededed;
+ }
+}
+
+body {
+ background: var(--background);
+ color: var(--bg-white);
+ font-family: "IBM Plex Sans", sans-serif;
+}
