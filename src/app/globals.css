@@ -9,16 +9,20 @@
  --bg-black: #000000;
  --primary: #6a54ff;
  --accent: #57e1ff;
- --accent-disabled: ##e7f7f8;
- --accent-secondary: ##35ff9e;
+ --accent-disabled: #e7f7f8;
+ --accent-secondary: #35ff9e;
 }
 
 @theme {
  --breakpoint-*: initial;
-
  --breakpoint-xs: 23.4375rem;
  --breakpoint-lg: 64rem;
  --breakpoint-xl: 90rem;
+
+ --color-primary: #6a54ff;
+ --color-accent: #57e1ff;
+ --color-accent-secondary: #35ff9e;
+ --color-background: #030718;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,4 +36,5 @@ body {
  background: var(--background);
  color: var(--bg-white);
  font-family: "IBM Plex Sans", sans-serif;
+ padding: 0 10px;
 }
